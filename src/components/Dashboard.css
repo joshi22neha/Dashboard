@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    line-height: 1.7;
+    color:black;
+    padding: 3rem;
+    box-sizing: border-box;
+    background:linear-gradient( to right, rgba(126, 213, 111, 0.7), #28b485 );
+}
+.card-list{
+    display : grid;
+    grid-template-columns: repeat(auto-fill,minmax(25rem,1fr));
+    grid-gap: 0 1rem;
+    grid-auto-rows: 43rem;
+    font-size: 1.1rem;
+}
+
+.card-img-top,
+.card-body{
+    opacity: .8;
+}
+
+.card-img-top:hover,
+.card-body:hover{
+    opacity: 1;
+}
+
+.card:hover{
+    box-shadow:  0 .4rem .8rem 0 rgba(0, 0, 0, 0.2), 0 .6rem 2rem 0 rgba(0, 0, 0, 0.19);
+    opacity: 1;
+}
+
+.card-text-name{
+    display: block;
+    text-align: center;
+    font-size: 1.7rem;
+    margin-bottom: .5rem;
+}
+
+.card-text-details{
+    display: block;
+}
+
+.card-text-details-followers{
+    float: left;
+}
+
+.card-text-details-contributions{
+   float: right;
+}
